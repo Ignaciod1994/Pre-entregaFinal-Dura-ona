@@ -1,0 +1,39 @@
+ <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilosjs.css">
+    <title>Simulador de prestamos</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.3.0/build/global/luxon.min.js"></script>
+        
+</head>
+<body>
+
+ <h1>SIMULADOR DE PRESTAMOS</h1>
+
+    <form id="formulario">
+        
+        <ul><input type="text" id="inputnombre" placeholder="Ingrese su nombre"></ul>
+        <ul><input type="text" id="inputapellido" placeholder="Ingrese su Apellido"></ul>
+        <ul><input type="text" id="inputdni" placeholder="Ingrese su numero de dni"></ul>
+        <ul><input type="text" id="inputedad" placeholder="Ingrese su edad"></ul>
+        <ul><input type="text" id="inputemail" placeholder="ingrese su email"></ul>
+        <ul><input type="number" id="inputcantidad" placeholder="Ingrese la cantidad a prestar (Mayor a 10000)" min="10001"></ul>
+        <ul><input type="number" id="inputcuotas" placeholder="Ingrese la cantidad a prestar(1 a 60)" min="1" max="60"></ul>
+
+        <button type="submit" id="boton">Enviar</button>
+
+    </form>
+
+    <div class="resultado "id="resultado"></div>
+    <ul><input type="text" id="buscarprestamo" placeholder="Ingrese nombre del prestamo buscado"></ul>
+    <button id="buscarButton">Buscar</button>  
+    <div class="encontrado" id="encontrado"></div>
+
+    
+ <script src="js/miarchivo.js"></script>
+
+    
+</body>
+</html>
